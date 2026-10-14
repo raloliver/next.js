@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -22,6 +22,31 @@
 
 body {
   background: var(--background);
-  font-family: "Sintony", sans-serif;
+  font-family: 'Sintony', sans-serif;
   color: var(--foreground);
+}
+
+/* @layer utilities {
+  .btn {
+    @apply px-4 py-2 rounded-md hover:cursor-pointer;
+  }
+  .btn-info {
+    @apply btn bg-gray-500 hover:bg-gray-700;
+  }
+} */
+
+@utility btn {
+  @apply px-4 py-2 rounded-md hover:cursor-pointer;
+}
+
+@utility btn-info {
+  @apply btn bg-gray-500 hover:bg-gray-700;
+}
+
+@utility btn-success {
+  @apply btn bg-green-500 hover:bg-green-700;
+}
+
+@utility btn-error {
+  @apply btn bg-red-500 hover:bg-red-700;
 }

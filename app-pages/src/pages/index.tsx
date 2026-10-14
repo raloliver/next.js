@@ -1,5 +1,7 @@
-import Page from '@/components/Page';
-
 export default function Home() {
-  return <Page>Hello Next.JS</Page>;
+  return (
+    <div className="flex justify-center h-screen items-center text-7xl">
+      Home Page
+    </div>
+  );
 }
